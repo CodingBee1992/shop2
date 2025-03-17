@@ -72,18 +72,26 @@ table {
 	border-radius: 8px;
 }
 
+
 @media screen and (width <= 767px) {
-	#navbar {
-		position: absolute;
+	.navbar {
+		position: fixed;
 		flex-direction: column;
 		align-items: center;
-		left: 100%;
+		left: 0;
 		top: 0;
-		background-color: lightcoral;
-		width: 100dvw;
-		height: 100dvh;
+		padding-top: 10rem;
+		width: 100%;
+		height: 100%;
+		transform: translateX(100%);
+		background-color: #fff;
+		transition: .4s;
+
+		a{
+			font-size: 1.8rem;
+		}
 	}
-	#close {
+	.close {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -96,10 +104,10 @@ table {
 		border-radius: 50%;
 		transition: 0.5s;
 		&:hover {
-			background-color: #918f8f;
+			background-color: #bebebe;
 		}
 	}
-	#mobile {
+	.mobile {
 		display: flex;
 		gap: 2rem;
 
@@ -113,9 +121,12 @@ table {
 			cursor: pointer;
 		}
 	}
+	// ======== SHOW MENU ==========
+.show-menu {
+	transform: translateX(0);
 }
-
-#navbar {
+}
+.navbar {
 	display: flex;
 	gap: 2rem;
 
@@ -912,10 +923,10 @@ table {
 }
 
 @media screen and (width >= 767px) {
-	#mobile {
+	.mobile {
 		display: none;
 	}
-	#close {
+	.close {
 		display: none;
 	}
 	#product1 {
