@@ -1,4 +1,4 @@
-let mainimg = document.getElementById('mainimg')
+let mainimg = document.getElementById('#mainimg')
 let smallimg = document.querySelector('.smallimg')
 
 smallimg[0].onclick = function(){
