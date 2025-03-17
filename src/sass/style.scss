@@ -546,6 +546,7 @@ img {
 		}
 	}
 	.copyright {
+		margin-top: 2rem;
 		text-align: center;
 	}
 }
@@ -821,7 +822,7 @@ img {
 
 	&-add{
 		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+		grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 		gap: 1rem;
 		margin-top: 4rem;
 
@@ -829,11 +830,34 @@ img {
 			display: flex;
 			flex-direction: column;
 			gap: 1rem;
-
+			h3{
+				font-size: 24px;
+			}
 			input{
+				margin-bottom: 0.5rem;
 				padding: 0.5rem;
-				
+				width: 60%;
 				font-size: 16px;
+				border: 1px solid #a1a1a1;
+				outline: none;
+			}
+		}
+
+		#subtotal{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			padding: 1rem;
+			border: 1px solid #a1a1a1;
+
+			table{
+				border-collapse: collapse;
+				td{
+					padding: 1rem;
+					border: 1px solid #a1a1a1;
+					width: 50%;
+				}
 			}
 		}
 	}
