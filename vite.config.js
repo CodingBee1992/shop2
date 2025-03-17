@@ -36,6 +36,10 @@ export default defineConfig( {
 			input: {
 				main: resolve(__dirname, 'index.html'),
 				shop: resolve(__dirname, './src/pages/shop.html'),
+				blog: resolve(__dirname, './src/pages/blog.html'),
+				about: resolve(__dirname, './src/pages/about.html'),
+				contact: resolve(__dirname, './src/pages/contact.html'),
+				cart: resolve(__dirname, './src/pages/cart.html'),
 				
 			},
 			external:['collect.js']
